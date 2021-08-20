@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Coding Survey</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" type="text/css">
+	</head>
+
+	<body>
+		<header>
+			<h1 id="title">Coding Survey</h1>
+		</header>
+
+		<main>
+			<p id="description">Tell us briefly about your coding experience.</p>
+		<form id="survey-form">
+			<div class="group">
+				<label id="name-label"><span class="required">*</span> Name:</label><br>
+				<input type="text" id="name" placeholder=" Enter your name." maxlength="25" required>
+			</div>
+
+			<div class="group">
+				<label id="number-label"><span class="required">*</span> Age:</label><br>
+				<input id="number" type="number" min="0" max="100" placeholder=" Enter your age." required>	
+			</div>
+
+			<div class="group">
+				<label id="email-label"><span class="required">*</span> Email:</label><br>
+				<input id="email" type="email" placeholder=" Enter your email." required>
+			</div>
+
+			<div class="group">
+				<label for="dropdown" id="dropdown-title"><span class="required">*</span> For how long have you been coding?</label><br>
+				<select id="dropdown" name="dropdown" required>
+					<option disabled selected value>Select an option</option>
+					<option value="1-3 YEARS">1-3 YEARS</option>
+					<option value="4-6 YEARS">4-6 YEARS</option>
+					<option value="7-10 YEARS">7-10 YEARS</option>
+					<option value="10+ YEARS">10+ YEARS</option>
+				</select>
+			</div>
+
+			 <div class="group">
+			 	<fieldset>
+			 		<legend>What is your favorite programming language?</legend>
+			 			<input type="radio" id="python-radio" name="language" value="Python">
+			 			<label for="python-radio">Python</label><br>
+			 	
+			 			<input type="radio" id="javascript-radio" name="language" value="JavaScript">
+			 			<label for="javascript-radio">JavaScript</label><br>
+
+			 			<input type="radio" id="ruby-radio" name="language" value="Ruby">
+			 			<label for="ruby-radio">Ruby</label><br>
+			 	</fieldset>
+			 </div>
+
+			 <div class="group">
+			 	<fieldset>
+			 		<legend>Do you plan on learning any more languages?</legend>
+						<input type="checkbox" id="python-checkbox" value="Python" name="checkbox">
+						<label for="python-checkbox">Python</label><br>
+
+						<input type="checkbox" id="javascript-checkbox" value="JavaScript" name="checkbox">
+						<label for="javascript-checkbox">JavaScript</label><br>
+
+						<input type="checkbox" id="ruby-checkbox" value="Ruby" name="checkbox">
+						<label for="ruby-checkbox">Ruby</label><br>
+
+						<input type="checkbox" id="c++-checkbox" value="C++" name="checkbox">
+						<label for="c++-checkbox">C++</label><br>
+
+						<input type="checkbox" id="other-checkbox" value="Other" name="checkbox">
+						<label for="other-checkbox">Other</label><br>
+				</fieldset>
+			 </div>	 
+
+			<div class="group">
+				<p>Do you have any additional comments?</p>
+				<textarea id="textarea" name="textarea" placeholder=" Enter your comments." maxlength="1000" rows="7" cols="60" maxlength="300"></textarea>
+			</div>
+			<div class="group">
+				<button id="submit">Submit</button>
+			</div>
+		</form>
+		</main>
+
+	<!-- Footer by Fonteini (@sfoteini) -->
+		<footer>
+			<p>
+				<span class="code">&lt;</span>
+				<span class="code">/&gt;</span>
+				with
+				<span class="heart"></span>
+				by <a target="_blank" href="https://github.com/ctsj">@ctsj</a> to complete the "Build a Survey Form" challenge on FreeCodeCamp.org (2021)</p>
+		</footer>
+	
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+	</body>
+</html>
