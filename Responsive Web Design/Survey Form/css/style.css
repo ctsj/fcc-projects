@@ -1,0 +1,138 @@
+* {
+	margin:  0;
+	padding: 0;
+}
+
+body {
+	background-color: #a49393;
+	width: 45%;
+}
+
+header, body {
+	margin: 0 auto;
+	margin-top: 2%;
+	padding: 20px 0 20px 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+	background-color: #67595e;
+	text-align: center;
+	color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+main {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #fff;
+	padding: 25px;
+}
+
+p {
+	line-height: 1.8em;
+}
+
+.group {
+	padding: 15px 0 0 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=number], 
+select, 
+textarea {
+	margin-top: 5px;
+	padding: 8px 0 8px 0;
+	width: 100%;
+	font-size: 12px;
+	opacity: 0.7;
+	border: 1.5px solid #a49393;
+	border-radius: 3px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+	opacity: 0.7;
+	border: 1.5px solid #a49393;
+	height: 11px;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=number]:hover, 
+select:hover, 
+textarea:hover {
+	opacity: 1;
+}
+
+fieldset > label {
+ font-size: 14px;
+ padding-left: 5px;
+ text-transform: uppercase;
+} 
+
+.required {
+ color: red;
+}
+
+fieldset > legend {
+  padding: 0 5px 0 5px;
+}
+
+option {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5em;
+}
+
+fieldset {
+  padding: 10px;
+  border: 1px double #bfb4b4;
+  border-radius: 3px;
+  line-height: 1.6em;
+}
+
+button#submit {
+	padding: 5px;
+	background-color: #67595e;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 3px;
+	opacity: 0.85;
+}
+
+button#submit:hover {
+	opacity: 1;
+}
+
+/* Footer by Fonteini (@sfoteini) */
+
+.heart::before {
+  content: '\2665';
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  font-size: 8px;
+  margin-top: 30px;
+}
+
+footer .code {
+  color: #fff;
+} 
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #fff;
+}
