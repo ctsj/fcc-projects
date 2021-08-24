@@ -9,4 +9,6 @@
 ## References 
 - [FreeCodeCamp Projects](https://github.com/kudeh/freecodecamp-projects) by kudeh
 - [Pen](https://codepen.io/biancamorris/pen/pbVwOY) by Bianca Morris
+- [Pen](https://codepen.io/7oao/pen/bKvbZx) by João Miguel
+- [Pen](https://codepen.io/aldi/pen/aKXyZa) by aldi
 - [Pen](https://codepen.io/ashishkhuraishy/pen/pxKGWa) by Ashish Khuraishy
