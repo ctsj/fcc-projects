@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+  </head>
+
+	<body>
+    <header id="header">
+        <nav id="nav-bar">
+          <img id="header-img" alt="Company logo" src="./images/logo.png">
+          <ul>
+            <li><a href="#home" class="nav-link">HOME</a></li>
+            <li><a href="#video" class="nav-link">VIDEO</a></li>
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
+          </ul>
+      </nav>
+
+        <!-- NEED TO FIX RESPONSIVENESS --> 
+
+        <div class="title" id="home">
+            <h1>Landing <br/>Page</h1> 
+        
+          <input type="email" name="subscribe" placeholder="&#9993; Subscribe..."><br>
+          <input type="submit" name="subscribe">
+        </div>
+    </header>
+
+    <main>
+
+      <section id="content-columns">
+        <p class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+        
+      <section id="contact">
+	  
+        <video autoplay muted loop id="video">
+          <source src="images/camera.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.  
+        </video>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h2>Contact Us</h2>
+          <div class="group">
+            <label id="name-label"><span class="required">*</span> Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="25" required>
+          </div>
+          
+          <div class="group">
+            <label id="email-label"><span class="required">*</span> Email:</label><br>
+            <input id="email" name="email" type="email" placeholder="e.g. hello@gmail.com" required>
+          </div>
+
+          <div class="group-textarea">
+            <textarea id="textarea" name="textarea" placeholder="Your message" rows="7" cols="60" maxlength="300" required=""></textarea>
+          </div>
+          
+          <div class="group">
+            <input type="submit" id="submit">
+          </div>
+        </form>
+      </section>
+    </main>
+
+      <footer>
+        <p>Written by <a target="_blank" href="https://github.com/ctsj">@ctsj</a> to complete the "Build a Product Landing Page" challenge on <a target="_blank" href="https://www.freecodecamp.org/">FreeCodeCamp.org</a>. <br/>Logo from <a target="_blank" href="https://www.iconfinder.com/">IconFinder</a>. Header from <a target="_blank" href="https://unsplash.com/">Unsplash</a>. Video from <a target="_blank" href="https://coverr.co/">Coverr</a>.</p>
+      </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+  </body>
+
+</html>
