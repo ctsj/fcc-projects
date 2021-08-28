@@ -109,6 +109,7 @@ button#submit {
 
 button#submit:hover {
 	opacity: 1;
+	cursor: pointer;
 }
 
 /* Footer by Fonteini (@sfoteini) */
