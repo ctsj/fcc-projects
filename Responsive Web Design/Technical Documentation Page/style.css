@@ -142,6 +142,6 @@ a:hover {
 		display: none;
 	}
 	#main-doc {
-    position: relative !important;
-    margin-left: 0;
-}
+		position: relative !important;
+		margin-left: 0;
+	}
