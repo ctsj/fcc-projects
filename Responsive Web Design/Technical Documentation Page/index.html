@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+
+    <title>Raspberry Pi Documentation</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+     <header><img src="./images/logo.png" alt="logo">Raspberry Pi</header>
+      <ul>
+        <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+        <li><a class="nav-link" href="#Download">Download</a></li>
+        <li><a class="nav-link" href="#Installation">Installation</a></li>
+        <li><a class="nav-link" href="#Configuration">Configuration</a></li>
+        <li><a class="nav-link" href="#Remote_Access">Remote Access</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+       </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Getting_Started">
+        <header>Getting Started</header>
+        <article>
+          <p>To get started with your Raspberry Pi computer you’ll need the following accessories:</p>
+          <ul>
+            <li>Monitor or TV.</li>
+            <li>Display cable.</li>
+            <li>Keyboard and mouse.</li>
+            <li>Micro SD card.</li>
+            <li>Ethernet cable (optional)</li>
+            <li>Power supply.</li>
+          </ul>
+          <p>We recommend the official Raspberry Pi Power Supply which has been specifically designed to consistently provide +5.1V despite rapid fluctuations in current draw. Those fluctuations in demand is something that happens a lot with when you’re using peripherals with the Raspberry Pi, and something that other supplies—designed to provide consistent current for charging cellphones—usually don’t cope with all that well. It also has an attached micro USB cable, which means that you don’t accidentally use a poor quality cable—something that can be an issue.</p>
+          <p>For the Raspberry Pi 4, Model B and Raspberry Pi 400 you should use the type C power supply; for all other models you should use the micro USB power supply.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Download">
+        <header>Download</header>
+        <article>
+          <p><strong>OPERATING SYSTEMS</strong></p>
+
+          <p>Many operating systems are available for Raspberry Pi, including Raspberry Pi OS, our official supported operating system. <a href="https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit" target="_blank">Raspberry Pi OS</a>, formerly Raspbian, is a free operating system based on Debian, optimised for the Raspberry Pi hardware, and is the recommended operating system for normal use on a Raspberry Pi.</p>
+
+          <p><a href="https://www.raspberrypi.org/software/" target="_blank">Raspberry Pi Imager</a> is the quick and easy way to install an operating system to a microSD card ready to use with your Raspberry Pi.</p>
+
+          <p>Alternatively, here are some other operating systems you can use with your Raspberry Pi, available to download and install manually.</p>
+            <ul>
+              <li><a href="https://libreelec.tv/" target="_blank">LibreElec</a></li>
+              <li><a href="https://osmc.tv/" target="_blank">OSMC</a></li>
+              <li><a href="https://ubuntu.com/download/raspberry-pi" target="_blank"> Ubuntu Desktop</a></li>
+              <li><a href="https://retropie.org.uk/" target="_blank">RetroPie</a></li>
+              <li><a href="https://dietpi.com/" target="_blank">DietPi</a></li>
+            </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Installation">
+        <header>Installation</header>
+        <article>
+          <p><strong>RASPBERRY PI IMAGER</strong></p>
+
+          <p>Download the latest version of <a href="https://www.raspberrypi.org/software/" target="_blank">Raspberry Pi Imager</a> and install it. If you want to use it from a second Raspberry Pi, you can install it from a terminal using <span class="code">sudo apt install rpi-imager</span>. Then:</p>
+          <ul>
+            <li>Connect an SD card reader with the SD card inside.</li>
+            <li>Open Raspberry Pi Imager and choose the required OS from the list presented.</li>
+            <li>Choose the SD card you wish to write your image to.</li>
+            <li>Review your selections and click on the Write button to begin writing data to the SD Card.</li>
+          </ul>
+          <p>You can now insert the SD card into the Raspberry Pi and power it up. For Raspberry Pi OS, if you need to manually log in, the default user name is <span class="code">pi</span>, with password <span class="code">raspberry</span>, and the default keyboard layout is set to United Kingdom (UK).</p>
+
+          <p><strong>MANUAL INSTALLATION</strong></p>
+
+          <p>If you are using a different tool than Raspberry Pi Imager to write to your SD Card, most require you to download the image first, then use the tool to write it to the card. Here are some popular tools you can use.</p>
+
+          <p><strong>balenaEtcher</strong></p>
+          <ul>
+            <li>Download the Windows installer from <a target="_blank" href="https://balena.io">balena.io</a></li>
+            <li>Run balenaEtcher and select the unzipped Raspberry Pi OS image file.</li>
+            <li>Select the SD card drive</li>
+            <li>Finally, click Burn to write the Raspberry Pi OS image to the SD card.</li>
+            <li>You’ll see a progress bar. Once complete, the utility will automatically unmount the SD card so it’s safe to remove it from your computer.</li>
+          </ul>
+
+          <p><strong>Win32DiskImager</strong></p>
+            <ul>
+              <li>Insert the SD card into your SD card reader. You can use the SD card slot if you have one, or an SD adapter in a USB port. Note the drive letter assigned to the SD card. You can see the drive letter in the left hand column of Windows Explorer, for example G:</li>
+              <li>Download the Win32DiskImager utility from the <a target="_blank" href="https://sourceforge.net/projects/win32diskimager/">Sourceforge Project</a> page as an installer file, and run it to install the software.</li>
+              <li>Run the Win32DiskImager utility from your desktop or menu and select the image file you extracted earlier.</li>
+              <li>In the device box, select the drive letter of the SD card.</li>
+              <li>Click 'Write' and wait for the write to complete.</li>
+              <li>Exit the imager and eject the SD card.</li>
+            </ul>
+
+        </article>
+      </section>
+      <section class="main-section" id="Configuration">
+        <header>Configuration</header>
+        <article>
+                  
+          <p><span class="code">raspi-config</span> is the Raspberry Pi configuration tool originally written by Alex Bradbury. You will be shown <span class="code">raspi-config</span> on first booting into Raspberry Pi OS. To open the configuration tool after this, simply run the following from the command line:</p>
+          <code>sudo raspi-config</code>
+          
+          <p>The <span class="code">sudo</span> is required because you will be changing files that you do not own as the <span class="code">pi</span> user.</p>
+
+          <p>You should then see a blue screen with options in a grey box:</p>
+          <figure><img src="https://www.raspberrypi.org/documentation/computers/images/raspi-config.png" alt="RPI Configuration Options"></figure>
+
+          <p>Use the up and down arrow keys to move the highlighted selection between the options available. Pressing the right arrow key will jump out of the Options menu and take you to the Select and Finish buttons. Pressing left will take you back to the options. Alternatively, you can use the Tab key to switch between these.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Remote_Access">
+        <header>Remote Access</header>
+        <article>
+
+          <p><strong>SECURE SHELL (SSH)</strong></p>
+          <p>You can access the command line of a Raspberry Pi remotely from another computer or device on the same network using the Secure Shell (SSH) protocol.</p>
+
+          <p>Raspberry Pi OS has the SSH server disabled by default. It can be enabled manually from the desktop:</p>
+            <ul>
+              <li>Launch Raspberry Pi Configuration from the Preferences menu.</li>
+              <li>Navigate to the Interfaces tab</li>
+              <li>Select Enabled next to SSH</li>
+              <li>Click OK</li>
+            </ul>
+
+          <p>Alternatively you can enable it from the terminal using the <span class="code">raspi-config</span> application:</p>
+            <ul>
+              <li>Enter sudo raspi-config in a terminal window</li>
+              <li>Select Interfacing Options</li>
+              <li>Navigate to and select SSH</li>
+              <li>Choose Yes</li>
+              <li>Select Ok</li>
+              <li>Choose Finish</li>
+            </ul>
+
+          <p>You can use SSH to connect to your Raspberry Pi from a Windows 10 computer that is using October 2018 Update or later without having to use third-party clients.</p>
+
+          <p>Open a terminal window on your computer replacing IP with the address of the Raspberry Pi you’re trying to connect to:</p>
+          <code>ssh pi@&lt;IP&gt;</code>
+
+          <p>Next you will be prompted for the password for the <span class="code">pi</span> login: the default password on Raspberry Pi OS is <span class="code">raspberry</span>.</p>
+          <code>pi@raspberrypi ~ $</code>
+
+          <br>
+
+          <p><strong>SAMBA (SMB)</strong></p>
+          
+          <p>Samba is a implementation of the SMB/CIFS networking protocol that is used by Microsoft Windows devices to provide shared access to files, printers, and serial ports.</p>
+
+          <p>You can use Samba to mount a folder shared from a Windows machine so it appears on your Raspberry Pi, or to share a folder from your Raspberry Pi so it can be accessed by your Windows machine.</p>
+
+          <p>By default, Raspberry Pi OS does not include CIFS/Samba support, but this can be added. The following commands will install all the required components for using Samba as a server or a client.</p>
+
+          <code>sudo apt update<br>
+          sudo apt install samba samba-common-bin smbclient cifs-utils</code>
+
+          <br>
+
+          <p><strong>VIRTUAL NETWORK COMPUTER (VNC)</strong></p>
+
+          <p>VNC is a graphical desktop sharing system that allows you to remotely control the desktop interface of one computer (running VNC Server) from another computer or mobile device (running VNC Viewer). VNC Viewer transmits the keyboard and either mouse or touch events to VNC Server, and receives updates to the screen in return.</p>
+
+          <p>VNC is already installed on the full Raspberry Pi OS image, and can be installed via Recommended Software from the Preferences menu on other versions. If you are not using a desktop you can install it from the command line as follows:</p>
+
+          <code>sudo apt update<br>
+          sudo apt install realvnc-vnc-server realvnc-vnc-viewer</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>.</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer>
+        <p><span class="symbol">&lt; /&gt;</span> by <a target="_blank" href="https://github.com/ctsj">@ctsj</a> to complete the "Build a Technical Documentarion Page" on <a target="_blank" href="https://freecodecamp.org">FreeCodeCamp</a>.</p>
+        <p>Text & logo &copy; <a target="_blank" href="https://raspberrypi.org">Raspberry Pi</a></p>
+      </footer>
+
+    </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+  </body>
+</html>
