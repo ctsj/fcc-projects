@@ -141,4 +141,7 @@ a:hover {
 	#navbar {
 		display: none;
 	}
+	#main-doc {
+    position: relative !important;
+    margin-left: 0;
 }
