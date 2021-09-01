@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<title>Personal Portfolio</title>
+</head>
+<body>
+
+	<nav id="navbar">
+		<ul>
+			<li><a href="#welcome-section"><i class="fa fa-fw fa-home"></i><span class="text">&nbsp;Home</span></a></li>
+			<li><a href="#projects"><i class="fa fa-fw fa-folder-open"></i><span class="text">&nbsp;Projects</span></a></li>
+			<li><a href="#contact"><i class="fa fa-fw fa-envelope"></i><span class="text">&nbsp;Contact</span></a></li>
+		</ul>
+	</nav>
+
+	<div id="welcome-section">
+		<h1 class="welcome">FreeCodeCamp Portfolio</h1>
+
+		<div class="links">
+			<a target="_blank" id="profile-link" href="https://github.com/ctsj"><i class="fa fa-github fa-lg"></i></a>
+			<a target="_blank" id="profile-link-fcc" href="https://www.freecodecamp.org/ctsj"><i class="fa fa-free-code-camp fa-lg"></i></a>
+		</div>
+	</div>
+
+	<div id="projects">
+		<figure class="project-tile">
+			<img class="screenshot" src="./images/tribute.jpg" alt="Tribute Page">
+			<figcaption><a target="_blank" href="https://ctsj.github.io/fcc-projects/Responsive%20Web%20Design/Tribute%20Page/">Tribute Page</a></figcaption>
+        </figure>
+		<figure class="project-tile">
+			<img class="screenshot" src="./images/survey.png" alt="Survey Form">
+            <figcaption><a target="_blank" href="https://ctsj.github.io/fcc-projects/Responsive%20Web%20Design/Survey%20Form/">Survey Form</a></figcaption>
+        </figure>
+		<figure class="project-tile">
+			<img class="screenshot" src="./images/landing.png" alt="Product Landing Page">
+			<figcaption><a target="_blank" href="https://ctsj.github.io/fcc-projects/Responsive%20Web%20Design/Product%20Landing%20Page/V2/">Product Landing Page</a></figcaption>
+		</figure>
+		<figure class="project-tile">
+			<img class="screenshot" src="./images/techdoc.png" alt="Technical Documentation Page">
+			<figcaption><a target="_blank" href="https://ctsj.github.io/fcc-projects/Responsive%20Web%20Design/Technical%20Documentation%20Page">Technical Documentation Page</a></figcaption>
+		</figure>
+		<figure class="project-tile">
+			<img class="screenshot" src="./images/portfolio.png" alt="Personal Portfolio">
+			<figcaption><a target="_blank" href="#">Personal Portfolio</a></figcaption>
+		</figure>
+	</div>
+
+	<div id="contact">
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h2>Contact</h2>
+          <div class="group">
+            <label id="name-label"><span class="required">*</span> Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="25" required>
+          </div>
+          
+          <div class="group">
+            <label id="email-label"><span class="required">*</span> Email:</label><br>
+            <input id="email" name="email" type="email" placeholder="e.g. hello@gmail.com" required>
+          </div>
+
+          <div class="group-textarea">
+            <textarea id="textarea" name="textarea" placeholder="Your message" rows="7" cols="60" maxlength="300" required=""></textarea>
+          </div>
+          
+          <div class="group">
+            <input type="submit" id="submit">
+          </div>
+        </form>
+	</div>
+
+	<footer>
+		<p><i class="fa fa-lg fa-fw fa-code"></i> by <a target="_blank" href="https://github.com/ctsj">@ctsj</a> to complete the "Build a Personal Portfolio Webpage" on <a target="_blank" href="https://freecodecamp.org">FreeCodeCamp</a>.</p>
+    </footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
+</body>
+</html>
