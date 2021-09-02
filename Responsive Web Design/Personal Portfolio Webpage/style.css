@@ -225,4 +225,7 @@ footer a:hover {
   span.text {
     display: none;
   }
+  #contact {
+    width: 70vw;
+  }
 }
